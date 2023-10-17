@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #222;
+    padding-bottom: 50px;
+}
+
+.conatiner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav{
+    position: fixed;
+    background-color: #222;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    transition: all 0.3s ease-in-out;
+}
+.nav ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav a{
+    color: white;
+    text-decoration: none;
+    padding: 7px 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.hero {
+    background-image: url('https://images.pexels.com/photos/13127343/pexels-photo-13127343.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+    z-index: -2;
+}
+
+.hero::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: -1;
+}
+
+.hero h1{
+    font-size: 46px;
+    margin: -20px 0 20px;
+}
+
+.hero p{
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.content h2, .content h3{
+    font-size: 150%;
+    margin: 20px 0;
+}
+
+.content p{
+    color: #555;
+    line-height: 30px;
+    letter-spacing: 1.2px;
+}
